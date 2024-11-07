@@ -1,0 +1,6 @@
+@use 'variables';
+.footer{
+    background-color: variables.$colorDarkOne;
+    color: variables.$colorWhite;
+    padding: 20px 0;
+}

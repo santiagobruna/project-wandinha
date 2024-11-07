@@ -1,0 +1,59 @@
+@use "variables";
+.accordion {
+  margin-bottom: 60px;
+
+  h2 {
+    color: variables.$colorWhite;
+  }
+  .container {
+    margin-top: 0 !important;
+  }
+  section {
+    margin-top: 0 !important;
+  }
+  .accordion-button {
+    background-color: #1f1f1f;
+    color: white !important;
+    font-weight: bold;
+    border: 1px solid #333;
+    transition: background-color 0.3s ease;
+  }
+  /* Cor do botão quando expandido */
+  .accordion-button:not(.collapsed) {
+    background-color: #2c2c2c;
+  }
+
+  /* Cor do botão ao passar o mouse */
+  .accordion-button:hover {
+    background-color: #444;
+  }
+
+  /* Cor do botão quando clicado (expandido) */
+  .accordion-button:focus,
+  .accordion-button.active {
+    background-color: black;
+    color: #444 !important;
+  }
+
+  /* Cor de fundo do corpo do accordion */
+  .accordion-body {
+    background-color: #f4f4f4;
+    color: #333 !important;
+  }
+
+  /* Cor da borda do accordion */
+  .accordion-item {
+    border: 1px solid #444;
+    margin-bottom: 10px;
+  }
+
+  /* Cor da borda do botão */
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+
+  /* Cor do corpo do accordion quando fechado */
+  .accordion-button.collapsed {
+    background-color: #1a1a1a;
+  }
+}

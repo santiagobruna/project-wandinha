@@ -1,0 +1,57 @@
+@use 'variables';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+    background-color: transparent; // Estado inicial transparente
+    opacity: 0.8;
+
+    &.scrolled {
+        background-color: variables.$colorDarkOne; // Cor de fundo ao rolar
+        opacity: 1;
+        .header__title {
+            color: variables.$colorWhite;
+        }
+    }
+
+    &__title {
+        color: variables.$colorDarkOne;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        &__item{
+            .link {
+                color: variables.$colorDarkOne;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+
+    @media(max-width: 768px){
+        display: block;
+        &__title {
+            text-align: center;
+        }
+        &__list{
+            margin-top: 30px;
+        }
+    }
+}
+
+.header.scrolled .link {
+    color: variables.$colorWhite; // Cor branca quando o cabeçalho estiver com fundo escuro
+    opacity: 1;
+    .header__title {
+        color: variables.$colorWhite;
+    }
+}

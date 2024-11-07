@@ -1,0 +1,14 @@
+@use 'variables';
+.cast {
+  color: variables.$colorWhite;
+  height: 100vh;
+  .container {
+    margin-top: 0 !important; 
+    .nav-link{
+        color:  variables.$colorWhite;
+    }
+  }
+  section {
+    margin-top: 0 !important; 
+  }
+}

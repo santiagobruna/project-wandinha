@@ -1,0 +1,21 @@
+@use 'variables';
+.about {
+    color: variables.$colorWhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 0;
+    height: 100vh;
+    &__text {
+       margin: 0 90px;
+    }
+
+    @media(max-width: 768px){
+        &__text {
+            text-align: justify;
+            margin: 0 10px;
+         }
+    }
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Gloock&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <title>Wednesday</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title title">Wednesday</h1>
+      <ul class="header__list">
+        <li class="header__list__item">
+          <a href="#home" class="link">Início</a>
+        </li>
+        <li class="header__list__item">
+          <a href="#cast" class="link">Elenco</a>
+        </li>
+        <li class="header__list__item">
+          <a href="#about" class="link">Sobre</a>
+        </li>
+        <li class="header__list__item">
+          <a href="#questions" class="link">Perguntas</a>
+        </li>
+      </ul>
+    </header>
+    <section class="hero" id="home"></section>
+    <section class="about" id="about">
+      <h2 class="about__title title">Wednesday</h2>
+      <p class="about__text text--big">
+        Wednesday (no Brasil, Wandinha) é uma série de televisão estadunidense
+        dos gêneros comédia dramática, suspense e terror criada por Alfred Gough
+        e Miles Millar baseado na personagem Wednesday Addams de The Addams
+        Family, do cartunista Charles Addams. Estrelada por Jenna Ortega como a
+        personagem titular, a série apresenta Gwendoline Christie, Riki
+        Lindhome, Jamie McShane, Hunter Doohan, Percy Hynes White, Emma Myers,
+        Georgie Farmer, Joy Sunday, Moosa Mostafa, Naomi J. Ogawa e Christina
+        Ricci em papeis principais, enquanto Catherine Zeta-Jones, Luis Guzmán,
+        Isaac Ordonez e Fred Armisen aparecem como participações especiais. Com
+        produção executiva e direção dos quatros primeiros episódios assinados
+        por Tim Burton, o mesmo já foi associado a dois projetos relacionados à
+        Família Addams: a adaptação de 1991, que ele rejeitou, e um filme de
+        animação em stop motion cancelado. Em outubro de 2020, foi relatado que
+        ele estava dirigindo uma série de televisão, que mais tarde foi
+        encomendada pela Netflix. As filmagens ocorreram na Romênia entre
+        setembro de 2021 e março de 2022. Wednesday estreou em 16 de novembro de
+        2022 em um evento em Los Angeles e foi lançado mundialmente na Netflix
+        em 23 de novembro. A série recebeu críticas predominantemente positivas,
+        com elogios ao desempenho de Ortega. Duas semanas após o lançamento,
+        Wednesday tornou-se a terceira série da Netflix em inglês mais assistida
+        mundialmente.
+      </p>
+    </section>
+    <section class="cast" id="cast">
+      <div class="container mt-5">
+        <h2 class="text-center">Informações do Filme</h2>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="elenco-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#elenco"
+              type="button"
+              role="tab"
+              aria-controls="elenco"
+              aria-selected="true"
+            >
+              Elenco
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="sinopse-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#sinopse"
+              type="button"
+              role="tab"
+              aria-controls="sinopse"
+              aria-selected="false"
+            >
+              Sinopse
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="trailer-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#trailer"
+              type="button"
+              role="tab"
+              aria-controls="trailer"
+              aria-selected="false"
+            >
+              Trailer
+            </button>
+          </li>
+        </ul>
+
+        <!-- Conteúdo das Tabs -->
+        <div class="tab-content" id="myTabContent">
+          <!-- Tab do Elenco -->
+          <div
+            class="tab-pane fade show active"
+            id="elenco"
+            role="tabpanel"
+            aria-labelledby="elenco-tab"
+          >
+            <h3>Elenco</h3>
+            <p>Conheça os atores principais do filme:</p>
+            <div class="row">
+              <div class="col-6 col-md-4 mb-3">
+                <figure class="text-center">
+                  <img
+                    src="./dist/images/perso1.jpg"
+                    alt="Ator 1"
+                    class="img-fluid mb-2"
+                  />
+                  <figcaption>Xavier Thorpe</figcaption>
+                </figure>
+              </div>
+
+              <div class="col-6 col-md-4 mb-3">
+                <figure class="text-center">
+                  <img
+                    src="./dist/images/perso2.jpg"
+                    alt="Ator 2"
+                    class="img-fluid mb-2"
+                  />
+                  <figcaption>Enid Sinclair</figcaption>
+                </figure>
+              </div>
+
+              <div class="col-6 col-md-4 mb-3">
+                <figure class="text-center">
+                  <img
+                    src="./dist/images/perso3.jpg"
+                    alt="Ator 3"
+                    class="img-fluid mb-2"
+                  />
+                  <figcaption>Wednesday</figcaption>
+                </figure>
+              </div>
+
+              <div class="col-6 col-md-4 mb-3">
+                <figure class="text-center">
+                  <img
+                    src="./dist/images/perso4.jpg"
+                    alt="Ator 4"
+                    class="img-fluid mb-2"
+                  />
+                  <figcaption>Tyler Galpin</figcaption>
+                </figure>
+              </div>
+
+              <div class="col-6 col-md-4 mb-3">
+                <figure class="text-center">
+                  <img
+                    src="./dist/images/perso5.jpg"
+                    alt="Ator 5"
+                    class="img-fluid mb-2"
+                  />
+                  <figcaption>Larissa</figcaption>
+                </figure>
+              </div>
+
+              <div class="col-6 col-md-4 mb-3">
+                <figure class="text-center">
+                  <img
+                    src="./dist/images/perso6.jpg"
+                    alt="Ator 6"
+                    class="img-fluid mb-2"
+                  />
+                  <figcaption>Bianca Barclay</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab da Sinopse -->
+          <div
+            class="tab-pane fade"
+            id="sinopse"
+            role="tabpanel"
+            aria-labelledby="sinopse-tab"
+          >
+            <h3>Sinopse</h3>
+            <p>
+              Baseada nos personagens clássicos de A Família Addams, Wandinha
+              (Wednesday no original) acompanha a infame personagem, aqui
+              interpretada por Jenna Ortega, enquanto ela investiga uma série de
+              assassinatos sobrenaturais pela cidade. A trama explora a
+              adolescência de Wandinha estudando na Academia Nevermore, uma
+              escola onde ela aprende a dominar suas habilidades paranormais. Ao
+              longo da série, a personagem passará por um processo de
+              amadurecimento com a ajuda de sua mãe, Morticia Addams (Catherine
+              Zeta-Jones). Conforme Wandinha se aprofunda nos mistérios que
+              circundam a cidade, ela descobre que algo também sobrenatural
+              envolveu seus pais há 25 anos atrás. Ao mesmo tempo, Wandinha
+              precisa equilibrar relações novas e complicadas com sua
+              personalidade sagaz, fria e sarcástica. A série é escrita por Al
+              Gough e Miles Millar e tem direção de Tim Burton.
+            </p>
+            <img
+              src="./dist/images/wednesday.jpg"
+              alt="Cena do filme"
+              class="img-fluid mb-3"
+              style="width: 100%; max-width: 500px"
+            />
+          </div>
+
+          <!-- Tab do Trailer -->
+          <div
+            class="tab-pane fade"
+            id="trailer"
+            role="tabpanel"
+            aria-labelledby="trailer-tab"
+          >
+            <h3>Trailer</h3>
+            <div class="embed-responsive embed-responsive-16by9 mb-3">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/Di310WS8zLk?si=eR4qiXAlsNGI7oBb"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="accordion" id="questions">
+      <div class="container mt-5">
+        <h2 class="text-center mb-5">
+          Por que você deveria assistir "Wandinha"?
+        </h2>
+
+        <!-- Accordion -->
+        <div class="accordion" id="accordionWandinha">
+          <div class="accordion-item">
+            <h2 class="accordion-header color-text" id="headingMystery">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseMystery"
+                aria-expanded="true"
+                aria-controls="collapseMystery"
+              >
+                Você gosta de mistérios sobrenaturais?
+              </button>
+            </h2>
+            <div
+              id="collapseMystery"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingMystery"
+              data-bs-parent="#accordionWandinha"
+            >
+              <div class="accordion-body">
+                Se você ama desvendar mistérios, "Wandinha" é a série perfeita!
+                A personagem principal investiga uma série de assassinatos
+                sobrenaturais enquanto tenta entender o que realmente está
+                acontecendo na cidade. Curioso para descobrir os segredos?
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingCharacters">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseCharacters"
+                aria-expanded="false"
+                aria-controls="collapseCharacters"
+              >
+                Você se encanta por personagens complexos?
+              </button>
+            </h2>
+            <div
+              id="collapseCharacters"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingCharacters"
+              data-bs-parent="#accordionWandinha"
+            >
+              <div class="accordion-body">
+                "Wandinha" apresenta personagens incríveis e cheios de camadas.
+                Desde a própria Wandinha Addams, com sua personalidade sagaz,
+                até os outros membros do elenco, cada um possui uma história
+                única e envolvente. Quem você acha que é o maior mistério da
+                série?
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEffects">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEffects"
+                aria-expanded="false"
+                aria-controls="collapseEffects"
+              >
+                Quer ver efeitos especiais de tirar o fôlego?
+              </button>
+            </h2>
+            <div
+              id="collapseEffects"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingEffects"
+              data-bs-parent="#accordionWandinha"
+            >
+              <div class="accordion-body">
+                Prepare-se para um espetáculo visual! A série oferece efeitos
+                especiais incríveis, desde poderes sobrenaturais até cenas
+                cheias de ação e suspense. Está pronto para ser surpreendido com
+                o que Wandinha pode fazer?
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTrailer">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTrailer"
+                aria-expanded="false"
+                aria-controls="collapseTrailer"
+              >
+                Já viu o trailer? Que tal uma prévia?
+              </button>
+            </h2>
+            <div
+              id="collapseTrailer"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTrailer"
+              data-bs-parent="#accordionWandinha"
+            >
+              <div class="accordion-body">
+                Se você ainda está em dúvida sobre assistir "Wandinha", dê uma
+                olhada no trailer abaixo. É impossível não ficar curioso para
+                saber mais sobre essa história de mistério e sobrenatural!
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/Di310WS8zLk?si=eR4qiXAlsNGI7oBb"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center footer">
+      &copy; Todos os direitos reservados - Desenvolvedora Bruna carla
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./dist/js/main.js"></script>
+</html>
