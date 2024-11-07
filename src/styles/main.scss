@@ -52,3 +52,9 @@ body{
         @include title(26px);
     }
 }
+
+@media(max-width: 768px){
+    h2 {
+      margin-top: 40px;
+    }
+  }
